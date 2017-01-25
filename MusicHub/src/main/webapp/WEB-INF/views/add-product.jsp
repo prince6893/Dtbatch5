@@ -34,7 +34,7 @@
 		<td><form:input path="brand" name="brand" /></td>
 	</tr>
 	<tr>
-		<td>price:</td>
+		<td>Price:</td>
 		<td><form:input path="price" name="price" /></td>
 	</tr>
 	
@@ -69,6 +69,11 @@
 </table>
 </form:form>
 </center>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
 <%@include file="footer.jsp" %>
 
 </body>

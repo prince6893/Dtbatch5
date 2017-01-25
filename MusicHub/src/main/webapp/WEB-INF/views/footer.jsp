@@ -49,7 +49,7 @@
           <h4 class="modal-title">Contact_us</h4>
         </div>
         <div class="modal-body">
-          <p>MusicMatch<br>
+          <p>MusicHub<br>
           Telephone: 9696969696
 
 		admin@MusicHub.com

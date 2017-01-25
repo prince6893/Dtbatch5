@@ -39,18 +39,17 @@
 </div> -->
 </div>
 <div class="item">
-<img id="slidePic" style="width:1100px;height:366px;min-width:100%;" class="img-responsive" src="<c:url value = "/resources/images/2.jpg" /> " alt="Second slide">
+<img id="slidePic" style="width:1100px;height:466px;min-width:100%;" class="img-responsive" src="<c:url value = "/resources/images/2.jpg" /> " alt="Second slide">
 <div class="carousel-caption">
 <!-- <h3>The world's most famous and popular language is music. </h3>
  --></div>
 </div>
 <div class="item">
-              <img id="slidePic" style="width:1100px;height:366px;min-width:100%;" class="img-responsive" src="<c:url value = "/resources/images/3.jpg" /> "alt="Third slide">
+              <img id="slidePic" style="width:1100px;height:466px;min-width:100%;" class="img-responsive" src="<c:url value = "/resources/images/3.jpg" /> "alt="Third slide">
               <div class="carousel-caption">
 <h1>50% OFF</h1>
 </div>
 </div>
-<h3>The world's most famous and popular language is music</h3>
 </div>
 </div></div>
 <!-- for left and right ctrl button on carousel -->
