@@ -22,7 +22,7 @@
 <div class="row">
 <div class="navbar-text-pull-left" class="col-m-12">
 
-<p style="color:#faebd7">copyright &copy; MusicHub.<a href="">Privacy</a>  <a href="" data-toggle="modal" data-target="#myModal">ContactUs</a> <a href="">Feedback </p>
+<p style="color:#faebd7">copyright &copy; MusicHub.<a href="#">Privacy</a>  <a href="#" data-toggle="modal" data-target="#myModal">ContactUs</a> <a href="#">Feedback </p>
 
 
 
