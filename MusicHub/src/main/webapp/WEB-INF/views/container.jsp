@@ -43,7 +43,7 @@
 			<div class="carousel-inner" role="listbox" id="myCarousel">
 				<div class="item active">
 					<img id="slidePic"
-						style="width: 1100px; height: 366px; min-width: 100%;"
+						style="width: 1100px; height: 466px; min-width: 100%;"
 						class="img-responsive"
 						src="<c:url value = "/resources/images/1.jpg" /> "
 						alt="First slide">
