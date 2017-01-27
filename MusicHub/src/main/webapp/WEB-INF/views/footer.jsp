@@ -7,6 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>MusicHub</title>
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Latest compiled and minified CSS -->
@@ -27,11 +29,12 @@
 
 
 
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
-        <a href="#"><i class="fa fa-linkedin"></i></a>
-        <a href="#"><i class="fa fa-google-plus"></i></a>
-        <a href="#"><i class="fa fa-skype"></i></a>
+        <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/login"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/uas/login"><i class="fa fa-linkedin"></i></a>
+        <a href="https://plus.google.com/"><i class="fa fa-google-plus"></i></a>
+        <a href="https://github.com/prince6893/"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-skype"></i></a>
 
 </div>
    
