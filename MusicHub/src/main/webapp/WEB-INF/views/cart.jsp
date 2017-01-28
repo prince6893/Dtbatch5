@@ -34,7 +34,7 @@
                         <th>Action</th>
                     </tr>
                     <tr ng-repeat = "item in cart.cartItems">
-                        <td>{{item.product.pname}}</td>
+                        <td>{{item.product.name}}</td>
                         <td>{{item.product.price}}</td>
                         <td>{{item.quantity}}</td>
                         <td>{{item.totalPrice}}</td>
