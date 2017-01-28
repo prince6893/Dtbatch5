@@ -26,15 +26,11 @@
 <center>
 <p style="color:#faebd7">Copyright &copy; MusicHub.<a href="#">Privacy</a>  <a href="#" data-toggle="modal" data-target="#myModal">ContactUs</a> <a href="#">Feedback </p>
 </center>
-
-
-
         <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
         <a href="https://twitter.com/login"><i class="fa fa-twitter"></i></a>
         <a href="https://www.linkedin.com/uas/login"><i class="fa fa-linkedin"></i></a>
         <a href="https://plus.google.com/"><i class="fa fa-google-plus"></i></a>
         <a href="https://github.com/prince6893/"><i class="fa fa-github" aria-hidden="true"></i></a>
-        <a href=""><i class="fa fa-skype"></i></a>
 
 </div>
    

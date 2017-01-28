@@ -69,7 +69,7 @@
 }
 
 #ap_style .error {
-	font-family: verdana, arial;
+	font-family: monotype corsiva, arial;
 	color: #D41313;
 	font-size: 1.00em;
 }
@@ -107,9 +107,6 @@
 </div>
 </div>
 </div>
-
-
 	<%@include file="footer.jsp"%>
-
 </body>
 </html>

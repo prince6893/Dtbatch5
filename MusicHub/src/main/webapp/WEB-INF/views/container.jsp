@@ -1,5 +1,4 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -24,7 +23,7 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
 	integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
 	crossorigin="anonymous"></script>
-<link rel="stylesheet" href="Css_Container.jsp">
+<link rel="stylesheet" href="Container.css">
 </head>
 <body>
 	<br>
@@ -47,9 +46,9 @@
 						class="img-responsive"
 						src="<c:url value = "/resources/images/1.jpg" /> "
 						alt="First slide">
-					<!--  to write captions on carousel              <div class="carousel-caption">
-
-</div> -->
+					<!--  to write captions on carousel              
+					<div class="carousel-caption">
+					</div> -->
 				</div>
 				<div class="item">
 					<img id="slidePic"

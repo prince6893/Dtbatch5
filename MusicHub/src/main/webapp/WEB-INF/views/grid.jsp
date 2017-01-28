@@ -20,6 +20,39 @@
 </head>
 <body>
 
+<div class="row">
+<div class="col-md-4 " >
+
+		<a class="btn btn-default col-sm-offset-8" style="background-color:	#A9A9A9"  href="<c:url value="/productForUser?searchCondition=String" />" role="button"  >
+
+<img class="center-block" src="<c:url value ="/resources/images/4.jpg"/>">
+</a>
+<div class=text-right   " style="margin-right:25px;">
+<a style="text-decoration:none" href="<c:url value="/productForUser?searchCondition=cat" />">New Products</a>
+</div>
+</div>
+
+<div class="col-md-4"  >
+		<a class="btn btn-default col-sm-offset-4"  style="background-color:	#A9A9A9"  href="<c:url value="/productForUser?searchCondition=drums" />" role="button">
+<img id="onee" class="center-block" src="<c:url value = "/resources/images/5.jpg" /> "  >
+</a>
+<div class=text-center " style="margin-right:25px;">
+<a style="text-decoration:none" href="<c:url value="/productForUser?searchCondition=cat" />">Drums</a>
+</div>
+</div>
+
+
+<div class="col-md-4" >
+		<a class="btn btn-default col-sm-offset-1"  style="background-color:	#A9A9A9" href="<c:url value="/productForUser?searchCondition=Accessories" />" role="button"  >
+
+<img class="center-block" src="<c:url value = "/resources/images/6.jpg" /> " >
+</a>
+<div class=text-left " style="margin-left:25px;">
+<a style="text-decoration:none" href="<c:url value="/productForUser?searchCondition=cat" />">Product Accessories</a>
+</div>
+</div>
+</div>
+<%-- 
 	<div class="container">
 		<h2 class="h2">Popular Products</h2>
 		<div class="row">
@@ -42,6 +75,6 @@
 			<!-- row 3 end -->
 		</div>
 		</div>
-		<!-- end container -->
+		 --%><!-- end container -->
 </body>
 </html>
