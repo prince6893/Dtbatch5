@@ -22,8 +22,8 @@
 <table border="1px" cellpadding="0" cellspacing="0" >
 <thead>
 <tr>
-<th width="10%">id</th><th width="10%">image</th><th width="15%">name</th><th width="10%">Brand</th>
-<th width="10%">price</th><th width="10%">Category Id</th><th width="10%">Supplier Id</th><th width="10%">actions</th>
+<th width="10%">Id</th><th width="10%">Image</th><th width="15%">Name</th><th width="10%">Brand</th>
+<th width="10%">Price</th><th width="10%">Category Id</th><th width="10%">Supplier Id</th><th width="10%">Actions</th>
 </tr>
 </thead>
 <tbody>
@@ -55,10 +55,14 @@
      
         </tbody>
 </table>
-<br>
-<br><br><br><br>
-<br><br>
-<br>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
 <%@include file="footer.jsp" %>
 
 </body>

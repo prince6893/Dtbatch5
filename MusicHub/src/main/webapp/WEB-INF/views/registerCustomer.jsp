@@ -44,6 +44,7 @@
 
 			<div style="background: #FFFFFF; padding: 10px" id="ap_style">
 				<style type="text/css" scoped>
+				
 #ap_style td {
 	text-align: left;
 	font-family: verdana, arial;
