@@ -1,11 +1,8 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
-<%@ taglib uri="http://www.springframework.org/security/tags"
-	prefix="security"%>
+<%@ taglib uri="http://www.springframework.org/security/tags" prefix="security"%>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -13,7 +10,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>MusicHub</title>
-<link rel="stylesheet" type="text/css" href="resources/css/theme.css" />
+
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 
 <script
@@ -36,8 +34,7 @@
 	<!-- header bar -->
 	<div class="navbar-wrapper">
 		<div class="container">
-
-			<nav class="navbar navbar-default navbar-fixed-top">
+			<nav class="navbar navbar-default">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed"
@@ -47,7 +44,9 @@
 							class="icon-bar"></span> <span class="icon-bar"></span> <span
 							class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index">MusicHub</a>
+				<!-- MusicHub LoGo -->
+					<a class="navbar-brand" href="<c:url value="/" />"> <img style="height: 36px; width:76px; padding-bottom: 10px" src="<c:url value = "/resources/images/logo.jpg" />"></a>
+				
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
@@ -87,10 +86,8 @@
 				</div>
 			</div>
 			</nav>
-
 		</div>
 	</div>
-	<br>
 
 </body>
 </html>

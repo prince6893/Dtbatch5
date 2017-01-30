@@ -1,4 +1,5 @@
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 
@@ -10,11 +11,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 <title>Add product page</title>
+<style>
+body
+{
+background-color:green;
+}
+</style>
 </head>
 <body>
+
 <%@include file="header.jsp" %>
-<br><br>
-<br><br>
+<br>
 <center>
 <h1>Add product page</h1>
 <p>Here you can add a new product.</p>
@@ -27,15 +34,16 @@
 
 	<tr>
 		<td>Name:</td>
-		<td><form:input path="name"  name="name" /></td>
+		<td><form:input path="name" placeholder="Name of the Product"  name="name" /></td>
 	</tr>
 	<tr>
+	
 		<td>Brand:</td>
-		<td><form:input path="brand" name="brand" /></td>
+		<td><form:input path="brand" placeholder="Brand Name" name="brand" /></td>
 	</tr>
 	<tr>
 		<td>Price:</td>
-		<td><form:input path="price" name="price" /></td>
+		<td><form:input path="price"  name="price" /></td>
 	</tr>
 	
 		

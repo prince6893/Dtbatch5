@@ -23,16 +23,12 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
 	integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
 	crossorigin="anonymous"></script>
-<link rel="stylesheet" type="text/css" href="../resources/css/theme.css">
+
 </head>
 <body>
-	<br>
-	<br>
-	<br>
-
 	<div class="container fluid" id="container2">
 		<div id="mycarousel" class="carousel slide" data-ride="carousel"
-			style="margin-top: 10px; margin-bottom: 30px; margin-left: auto; margin-right: auto;"
+			style="margin-bottom: 30px; margin-left: 20px; margin-right: 10px;"
 			data-interval="2000">
 			<ol class="carousel-indicators">
 				<li data-target="#mycarousel" data-slide-to="0" class="active"></li>
@@ -57,8 +53,7 @@
 						src="<c:url value = "/resources/images/2.jpg" /> "
 						alt="Second slide">
 					<div class="carousel-caption">
-						<!-- <h3>The world's most famous and popular language is music. </h3>
- -->
+						 <h3>Don't lose Yourself in anger. Lose in Music. </h3>
 					</div>
 				</div>
 				<div class="item">
@@ -75,10 +70,11 @@
 		</div>
 	</div>
 	<!-- for left and right ctrl button on carousel -->
-	<a class="left carousel-control" href="#mycarousel" role="button"
+	
+	<a style="width:150px;" class="left carousel-control" href="#mycarousel" role="button"
 		data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span>
 	</a>
-	<a class="right carousel-control" href="#mycarousel" role="button"
+	<a style="width:150px;" class="right carousel-control" href="#mycarousel" role="button"
 		data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span>
 	</a>
 

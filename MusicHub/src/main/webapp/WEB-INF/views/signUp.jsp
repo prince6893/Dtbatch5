@@ -1,14 +1,43 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<html>
+<head>
+<style>
+#ba
+{
+float:left;
+padding-left: 75px;
+
+}
+#sa
+{
+float: right;
+padding-right: 150px;
+}
+#sub
+{
+padding-top: 375px;
+padding-left: 450px;
+padding-right: 200px;
+}
+#bi
+{
+padding-left: 250px;
+padding-right: 260px;
+}
+
+</style>
+</head>
 <title>Sign Up</title>
 <%@ include file="header.jsp" %>
 <br>
-<br>
-<br>
-<br>
-<body background=resources/images/bg1.png>
-<div class="container-wrapper">
+
+<!-- <body background=resources/images/back4.jpg>
+ -->
+
+ <div class="container-wrapper">
     <div class="container">
         <div class="page-header">
+            <center>
             <h1>Register Customer</h1>
 
             <p class="lead">Please fill in your information below</p>
@@ -16,10 +45,10 @@
 <%-- <c:url var="addAction" value="/register"></c:url>
  --%>
 		<form:form action="${pageContext.request.contextPath}/register" commandName="registerCommand" method="post">
-			
+</center>
 
-        <h3>Basic Information</h3>
-
+        <h3 style="text-align: center;">Basic Information</h3>
+ <div id="bi">	
         <div class="form-group">
             <label for="name">Name</label>
             <form:errors path="username" cssStyle="color: #ff0000" />
@@ -51,10 +80,10 @@
             <form:password path="password" id="password" required="true" class="form-Control" />
         </div>
 
-
+</div>
         <br/>
-
-        <h3>Billing Address</h3>
+<div id="ba">
+        <h3>Billing Address for Products</h3>
 
         <div class="form-group">
             <label for="billingStreet">Street Name</label>
@@ -83,7 +112,10 @@
         </div>
 
         <br/>
+</div>
 
+
+<div id="sa">
         <h3>Shipping Address for Products</h3>
 
         <div class="form-group">
@@ -112,17 +144,21 @@
             <label for="shippingZip">Zipcode</label>
             <form:input path="shippingAddress.zipCode" id="zip" required="true" class="form-Control" />
         </div>
-
+</div>
+  <div id="sub">
+        <input type="submit" value="Submit" class="btn btn-primary">
+        <a href="<c:url value="/" />" class="btn btn-warning">Cancel</a>
+</div>
         <br/><br/>
-
-        <input type="submit" value="submit" class="btn btn-default">
-        <a href="<c:url value="/" />" class="btn btn-default">Cancel</a>
-
         </form:form>
-</div></div>
+      
+</div>
+</div>
 <br>
 <br>
 <br>
 <br>
 
 <%@ include file="footer.jsp" %>
+</body>
+</html>

@@ -25,20 +25,29 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
 	integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
 	crossorigin="anonymous"></script>
+	<style>
+	#fot
+	{
+	bottom: px;
+	}
+	</style>
 </head>
-<body style="background-color: #EEEEEE">
+<!-- <body style="background-color: #EEEEEE"> -->
 	<%@include file="header.jsp"%><br><br><br><br>
+	<body background=resources/images/back4.jpg>
 	<h1><center>Login</center></h1>
 <h3><center><p>Get access to your Orders,Wishlist and Recommendations</p></center></h3>
 
 <br>
+<!--
 	<div style="text-align: center; background-color: #EEEEEE;">
 		<div
 			style="box-sizing: border-box; display: inline-block; width: auto; max-width: 1500px; background-color: #FFFFFF; border: 2px solid #9999cc; border-radius: 5px; box-shadow: 0px 0px 8px #9999cc; margin: 50px auto auto;">
 
 			<div style="background: #FFFFFF; padding: 10px" id="ap_style">
-				<style type="text/css" scoped>
-
+				
+				
+ 				<style>
 
 #ap_style input {
 	border: 1px solid #CCCCCC;
@@ -66,47 +75,53 @@
 }
 
 
-}
 
 #ap_style .error {
 	font-family: monotype corsiva, arial;
 	color: #D41313;
 	font-size: 1.00em;
 }
-</style>
-				<script type="text/javascript"
+ -->
+		 	<script type="text/javascript"
 					src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 				<div class="container-wrapper">
-<div class="container">
-<div id="login-box">
-<h2>Login with Username and Password</h2>
-<c:if test="${not empty msg}">
-<div class="msg">${msg}</div>
-</c:if>
-<!--j_spring_security_check"-->
-<form name="loginForm" action="<c:url value="/j_spring_security_check"/>"method="post">
-<c:if test="${not empty error}">
-<div class="error"style="color: #ff0000;">${error}</div>
-</c:if>
-<div class="form-group">
-<label for="username">User: </label>
-<input type="text" id="username" name="username" class="form-control"/>
-</div>
-<div class="form-group">
-<label for="password"> Password:</label>
-<input type="password" id="password" name="password" class="form-control"/>
-</div>
-<input type="submit" value="Submit" class="btnbtn-default">
-<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
-</form>
-</div>
-</div>
-</div>
-<br>
+					<div class="container">
+						<div id="login-box">
+							<h2>Login with Username and Password</h2>
+							<c:if test="${not empty msg}">
+								<div class="msg">${msg}</div>
+							</c:if>
+							<!--j_spring_security_check"-->
+							<form name="loginForm"
+								action="<c:url value="/j_spring_security_check"/>" method="post">
+								<c:if test="${not empty error}">
+									<div class="error" style="color: #ff0000;">${error}</div>
+								</c:if>
+								<div class="form-group">
+									<label for="username">User: </label> <input type="text"
+										id="username" name="username" class="form-control" />
+								</div>
+								<div class="form-group">
+									<label for="password"> Password:</label> <input type="password"
+										id="password" name="password" class="form-control" />
+								</div>
+								<input type="submit" value="Submit" class="btn btn-default">
+								<input type="hidden" name="${_csrf.parameterName}"
+									value="${_csrf.token}" />
+							</form>
+						</div>
+					</div>
+				</div>
+				<br>
 <br><br>
-</div>
-</div>
-</div>
-	<%@include file="footer.jsp"%>
+
+
 </body>
+<br>
+</br></br>
+<br>
+<br>
+<div id="fot">
+	<%@include file="footer.jsp"%>
+</div>
 </html>
