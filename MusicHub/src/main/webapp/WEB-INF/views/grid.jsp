@@ -6,20 +6,94 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Popular Products</title>
+<style>
+#features
+{
+text-align: center;
+}
+#features img {
+	margin: 10px 10px 10px;
+}
+img:hover
+{
+    box-shadow: 0px 0px 150px #000000;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.5);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    transform: scale(1.5);
+}
 
-<link rel="stylesheet"
-	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-<!-- jQuery library -->
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script
-	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</style>
 </head>
 <body>
+<div class="container">
+<div class="row" id="featuresHeading">
+<div class="col-12">
+<h2>Products</h2>
+<p class="lead">Want to have the closer look of the products just click on one of them
+</p>
 
+</div><!-- end col 12 -->
+</div><!-- end fheading -->
+<div class="row" id="features">
+<div class="col-sm-3 feature">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">Popular Products</h3>
+</div><!-- div end panel heading -->
+<img src="<c:url value ="/resources/images/4.jpg"/>" alt="Popular products" class="img-circle">
+<br>
+<a href="<c:url value="/productForUser?searchCondition=cat"/>">Popular Products</a>
+</div><!-- end panel -->
+</div><!-- col4 end feature -->
+<div class="col-sm-3 feature">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">Deals of the day</h3>
+</div><!-- div end panel heading -->
+<img src="<c:url value ="/resources/images/5.jpg"/>" alt="Popular products" class="img-circle">
+<br>
+<a href="<c:url value="/productForUser?searchCondition=cat"/>">Deal of the Day</a>
+</div><!-- end panel -->
+</div><!-- col4 end feature -->
+<div class="col-sm-3 feature">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">Recently Viwed</h3>
+</div><!-- div end panel heading -->
+<img src="<c:url value ="/resources/images/6.jpg"/>" alt="Popular products" class="img-circle">
+
+<br>
+<a href="<c:url value="/productForUser?searchCondition=cat"/>">Recently viewed</a>
+</div><!-- end panel -->
+</div><!-- col4 end feature -->
+<div class="col-sm-3 feature">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">Specially For You</h3>
+</div><!-- div end panel heading -->
+<div class="kit">
+<img style="height: 70px;width: 120px; " src="<c:url value ="/resources/images/ques.jpg"/>" alt="Popular products" class="img-circle">
+</div>
+
+<a href="<c:url value="/productForUser?searchCondition=cat"/>">Click me for more</a>
+</div><!-- end panel -->
+</div><!-- col4 end feature -->
+
+
+</div><!-- end features -->
+
+
+</div><!-- end container -->
+
+
+
+<%-- 
 <div class="row">
 <div class="col-md-4 " >
 
@@ -51,7 +125,7 @@
 <a style="text-decoration:none" href="<c:url value="/productForUser?searchCondition=cat" />">Product Accessories</a>
 </div>
 </div>
-</div>
+</div> --%>
 <%-- 
 	<div class="container">
 		<h2 class="h2">Popular Products</h2>

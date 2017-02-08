@@ -7,7 +7,6 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>MusicHub</title>
-<link rel="shortcut icon" src="<c:url value="./resources/images/images.jpg" />" >
 
 
 </head>

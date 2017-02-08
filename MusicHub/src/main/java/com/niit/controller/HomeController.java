@@ -43,7 +43,11 @@ public class HomeController {
 	{
 		return "administrator";
 	}
-	
+@RequestMapping("/privacy")
+public String privacy()
+{
+	return "privacy";
+}
 	
 	
 }

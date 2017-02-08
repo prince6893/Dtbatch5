@@ -20,7 +20,7 @@
 
                 <div>
                     <a class="btn btn-danger pull-left" ng-click = "clearCart()"><span class="glyphicon glyphicon-remove-sign"></span> Clear Cart</a>
-                    <a href="<spring:url value="/order/${cid}" />" class="btn btn-success pull-right"><span class="glyphicon glyphicon-shopping-cart"></span> Check out</a>
+                    <a href="<spring:url value="/order/${cid}" />" class="btn btn-success pull-right"><span class="glyphicon glyphicon-shopping-cart"></span>Check out</a>
                 </div>
 
                 <br/><br/><br/>
@@ -38,7 +38,7 @@
                         <td>{{item.product.price}}</td>
                         <td>{{item.quantity}}</td>
                         <td>{{item.totalPrice}}</td>
-                        <td><a href="#" class="label label-danger" ng-click="removeFromCart(item.product.pid)"><span class="glyphicon glyphicon-remove"></span>remove</a></td>
+                        <td><a href="#" class="label label-danger" ng-click="removeFromCart(item.product.pid)"><span class="glyphicon glyphicon-remove"></span>Remove</a></td>
                     </tr>
                  
                    
@@ -63,4 +63,9 @@
 <br>
 <br>
 <br>
+</div>
+</div>
+
 <%@include file="footer.jsp" %>
+</body>
+</html>

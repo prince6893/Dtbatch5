@@ -8,27 +8,55 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>MusicHub</title>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-	crossorigin="anonymous">
+<style>
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
 
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
 
-<!-- Latest compiled and minified JavaScript -->
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-	integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-	crossorigin="anonymous"></script>
+/* Declare heights because of positioning of img element */
 
+.carousel .item {
+  height: 500px;
+
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+/* .carousel {
+position: absolute;
+top:0;
+}
+
+.carousel-inner 
+{
+position: relative; width: 100%; overflow: hidden;
+}
+
+ */
+
+</style>
 </head>
 <body>
-	<div class="container fluid" id="container2">
-		<div id="mycarousel" class="carousel slide" data-ride="carousel"
-			style="margin-bottom: 30px; margin-left: 20px; margin-right: 10px;"
+	<div id="mycarousel" class="carousel slide" data-ride="carousel" style="margin-bottom: 10px; margin-left: 20px; margin-right: 10px;"
 			data-interval="2000">
 			<ol class="carousel-indicators">
 				<li data-target="#mycarousel" data-slide-to="0" class="active"></li>
@@ -38,7 +66,7 @@
 			<div class="carousel-inner" role="listbox" id="myCarousel">
 				<div class="item active">
 					<img id="slidePic"
-						style="width: 1100px; height: 466px; min-width: 100%;"
+						style="width: 1100px; height: 500px; min-width: 100%;"
 						class="img-responsive"
 						src="<c:url value = "/resources/images/1.jpg" /> "
 						alt="First slide">
@@ -48,7 +76,7 @@
 				</div>
 				<div class="item">
 					<img id="slidePic"
-						style="width: 1100px; height: 466px; min-width: 100%;"
+						style="width: 1100px; height: 500px; min-width: 100%;"
 						class="img-responsive"
 						src="<c:url value = "/resources/images/2.jpg" /> "
 						alt="Second slide">
@@ -58,7 +86,7 @@
 				</div>
 				<div class="item">
 					<img id="slidePic"
-						style="width: 1100px; height: 466px; min-width: 100%;"
+						style="width: 1100px; height: 500px; min-width: 100%;"
 						class="img-responsive"
 						src="<c:url value = "/resources/images/3.jpg" /> "
 						alt="Third slide">
@@ -67,8 +95,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
+	
 	<!-- for left and right ctrl button on carousel -->
 	
 	<a style="width:150px;" class="left carousel-control" href="#mycarousel" role="button"
@@ -77,12 +104,7 @@
 	<a style="width:150px;" class="right carousel-control" href="#mycarousel" role="button"
 		data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span>
 	</a>
+</div>
 
-	</div>
-	</div>
-	</div>
-	<br>
-	<br>
-	<br>
 </body>
 </html>

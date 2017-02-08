@@ -17,8 +17,11 @@
 <%@include file="header.jsp" %>
 <br>
 <br><br>
+<div class="container">
 <h1><center>List of Product</center></h1>
 <p><center>Here you can see the list of the Products, edit them, remove or update.</center></p>
+<center>
+
 <table border="1px" cellpadding="0" cellspacing="0" >
 <thead>
 <tr>
@@ -44,7 +47,7 @@
 	<a href="${pageContext.request.contextPath}/product/editproduct/${product.pid}">Edit</a><br/>
 	<a href="${pageContext.request.contextPath}/product/delete/${product.pid}">Delete</a><br/>
 	</td>
-	
+</center>	
 	
 	 
 </tr>
@@ -55,12 +58,17 @@
      
         </tbody>
 </table>
+</div><!-- end container -->
 <br />
 <br />
 <br />
 <br />
 <br />
 <br />
+<br />
+<br />
+
+<br /><br />
 <br />
 
 <%@include file="footer.jsp" %>

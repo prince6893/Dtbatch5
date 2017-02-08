@@ -1,9 +1,6 @@
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
-
-<script
-	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
@@ -12,10 +9,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-<link rel="stylesheet"	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<script	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <script	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <title>List of Products</title>
+<%@include file="header.jsp"%>
 <c:if test="${!empty Product}">
 	<script>
 		$(document).ready(
@@ -32,7 +31,6 @@
 							});
 				});
 	</script>
-	<%@include file="header.jsp"%>
 </head>
 
 
@@ -41,15 +39,14 @@
 
 	<br>
 	<br>
-	<br>
-	<br>
-	<br>
+	
 
 	<div class="container-wrapper">
 		<div class="container">
 			<div class="page-header">
 				<center>
-					<h1>List of Products</h1>
+					<h1>All Products</h1>
+				<h2>Checkout all the products available now!</h2>
 				</center>
 				<br /> <br />
 
@@ -100,7 +97,9 @@
 			<br /> <br /> <br /> <br /> <br /> <br />
 
 		</div>
+		</div>
 		<!-- Container div end -->
+</br>
 		<%@include file="footer.jsp"%>
 </body>
 </html>

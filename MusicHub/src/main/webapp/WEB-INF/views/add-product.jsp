@@ -12,10 +12,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 <title>Add product page</title>
 <style>
-body
+td
 {
-background-color:green;
+padding-bottom: 10px;
+padding-top: 10px;
 }
+
+
 </style>
 </head>
 <body>

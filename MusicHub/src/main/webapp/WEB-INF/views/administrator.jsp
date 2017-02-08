@@ -5,24 +5,29 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-<title>Home page</title>
+<title>Admin page</title>
+<style>
+.ad
+{
+}
+</style>
 </head>
 <body>
 <%@include file="header.jsp" %>
 
-<br>
-
+<br />
+<h1 align="center">Welcome back, Admin!</h1>
 <br>
 <br><br><br><br>
-
-
-
-${message}
 <br>
-<center>
-<a href="${pageContext.request.contextPath}/product/add.html">AddProduct</a>
+
+<div class="container">
+
+<div align="center" id="ad">
+
+<a href="${pageContext.request.contextPath}/product/add">AddProduct</a>
 <br><br>
-<a href="${pageContext.request.contextPath}/product/list.html">Product list</a>
+<a href="${pageContext.request.contextPath}/product/list">Product list</a>
 <br><br>
 <a href="${pageContext.request.contextPath}/category/add">AddCategory</a>
 <br><br>
@@ -31,12 +36,13 @@ ${message}
 <a href="${pageContext.request.contextPath}/supplier/add">Add Supplier</a>
 <br><br>
 <a href="${pageContext.request.contextPath}/supplier/list">Supplier list</a>
-</center>
-<br><br><br>
+</div>
+</div>
 
-<br>
+<br><br><br>
+<br><br>
 <br><br><br><br>
-<br><br><br><br>
+
 <%@include file="footer.jsp" %>
 
 </body>
