@@ -13,6 +13,10 @@
 </head>
 <body>
 <center>
+<br>
+</br>
+<br>
+</br>
 
 <h1>Add Category page</h1>
 <p>Here you can add a new Categories.</p>

@@ -8,23 +8,20 @@
 
 <title>MusicHub</title>
 <style>
-.social {
-	text-align: right;
-	padding-top: 0px;
-}
-
 .fa {
-	    font-size: 30px;
-margin-top:0;	  
-	   margin-bottom: 10%;
-	}
-p {
+	font-size: 30px;
+	margin-top: 0;
+	margin-bottom: 10%;
 	color: aqua;
-padding-top: 5px;
 }
 
-a {
+#fot {
 	color: aqua;
+	padding-top: 10px;
+}
+#inputMessage
+{
+margin-bottom: 10px;
 }
 </style>
 
@@ -34,19 +31,16 @@ a {
 	<div class="container">
 		<div class="row">
 			<div class="navbar-text-pull-left" class="col-m-12">
-				<p align="left">
+				<p id="fot" align="left">
 					Copyright &copy; MusicHub <a style="padding-left: 5px;"
-						href="<c:url value="/privacy" />">Privacy</a> <a href="#"
-						data-toggle="modal" data-target="#myModal">ContactUs</a> 
-						<a href="#">Feedback
-					  <div class="nav navbar-nav pull-right" class="col-m-6">
-							<a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
-							<a href="https://twitter.com/login"><i class="fa fa-twitter"></i></a>
-							<a href="https://www.linkedin.com/uas/login"><i
-								class="fa fa-linkedin"></i></a> <a href="https://plus.google.com/"><i
-								class="fa fa-google-plus"></i></a> <a
-								href="https://github.com/prince6893/"><i
-								class="fa fa-github" aria-hidden="true"></i></a>
+						href="<c:url value="/privacy" />">Privacy</a> 
+						<a href="#myModal" data-toggle="modal" data-target="#myModal">ContactUs</a> 
+						<div class="nav navbar-nav pull-right" class="col-m-6">
+							<a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+							<a href="https://twitter.com/login" target="_blank"><i class="fa fa-twitter"></i></a>
+							<a href="https://www.linkedin.com/uas/login" target="_blank"><i class="fa fa-linkedin"></i></a> 
+							<a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a> 
+							<a href="https://github.com/prince6893/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
 						</div>
 				</p>
 			</div>
@@ -55,31 +49,55 @@ a {
 
 
 		<!-- Modal -->
-		<div class="modal" id="myModal" role="dialog">
+		<div class="modal fade" id="myModal" role="button">
 			<div class="modal-dialog">
-
 				<!-- Modal content-->
 				<div class="modal-content">
 					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal">&times;</button>
-						<h4 class="modal-title">Contact_us</h4>
-					</div>
+						<button class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Contact_Us</h4>
+					</div><!-- end modal header -->
 					<div class="modal-body">
-						<p>
-							MusicHub<br> Telephone: 9634561114 <br>
-
-							admin@MusicHub.com Email Subscriptions Update your email address
-							or change your subscription status
+						<p>MusicHub<br>
+						Telephone: 9634561114 <br>
+						 Email:admin@MusicHub.com 
+					<br>
+					 Email Subscriptions Update your email address or change your subscription status
 						</p>
-					</div>
+						<form class="form-horizontal">
+						<div class="form-group">
+						<label class="col-lg-2 control-label" for="inputName">Name</label>
+						<div class="col-lg-10">
+						<input class="form-control"id="inputName" placeholder="Name" type="text">
+						
+						</div>
+						</div>
+						<div class="form-group">
+						<label class="col-lg-2 control-label" for="inputEmail">Email Id</label>
+						<div class="col-lg-10">
+						<input class="form-control"id="inputEmail" placeholder="Email Id" type="text">
+						
+						</div>
+						</div>
+						<div class="form-group">
+						<label class="col-lg-2 control-label" for="inputMessage">Description</label>
+						<div class="col-lg-10">
+						<textarea class="form-control" id="inputMessage" placeholder="Message" rows="3"></textarea>
+						<button class="btn btn-success pull-right" type="submit">Send Message</button>
+						</div>
+						</div>
+						
+					</form>
+					</div><!-- end modal body -->
 					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-default btn-lg" data-dismiss="modal">Close</button>
 					</div>
 
 				</div>
 
 			</div>
 		</div>
+		
 	</div>
 </body>
 </html>

@@ -17,9 +17,10 @@
 <%@include file="header.jsp" %>
 <br>
 <br><br><br><br>
+<div class="container">
 <h1>List of supplier</h1>
 <p>Here you can see the list of the supplier, edit them, remove or update.</p>
-<table border="1px" cellpadding="0" cellspacing="0" >
+<table border="1px" cellpadding="0" cellspacing="0" class="table table-hover">
 <thead>
 <tr>
 <th width="10%">id</th><th width="15%">name</th><th width="10%">Brand</th><th width="10%">Email</th>
@@ -54,6 +55,7 @@
 </table>
 <br>
 <br><br><br>
+</div>
 <%@include file="footer.jsp" %>
 
 </body>

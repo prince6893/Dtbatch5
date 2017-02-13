@@ -14,7 +14,7 @@ text-align: center;
 #features img {
 	margin: 10px 10px 10px;
 }
-img:hover
+#g1:hover
 {
     box-shadow: 0px 0px 150px #000000;
     z-index: 2;
@@ -46,9 +46,10 @@ img:hover
 <div class="panel-heading">
 <h3 class="panel-title">Popular Products</h3>
 </div><!-- div end panel heading -->
-<img src="<c:url value ="/resources/images/4.jpg"/>" alt="Popular products" class="img-circle">
+<a href="<c:url value="/productForUser?searchCondition=cat"/>">
+<img id="g1" src="<c:url value ="/resources/images/4.jpg"/>" alt="Popular products" class="img-circle">
 <br>
-<a href="<c:url value="/productForUser?searchCondition=cat"/>">Popular Products</a>
+Popular Products</a>
 </div><!-- end panel -->
 </div><!-- col4 end feature -->
 <div class="col-sm-3 feature">
@@ -56,20 +57,21 @@ img:hover
 <div class="panel-heading">
 <h3 class="panel-title">Deals of the day</h3>
 </div><!-- div end panel heading -->
-<img src="<c:url value ="/resources/images/5.jpg"/>" alt="Popular products" class="img-circle">
+<a href="<c:url value="/productForUser?searchCondition=cat"/>">
+<img id="g1" src="<c:url value ="/resources/images/5.jpg"/>" alt="Popular products" class="img-circle">
 <br>
-<a href="<c:url value="/productForUser?searchCondition=cat"/>">Deal of the Day</a>
+Deal of the Day</a>
 </div><!-- end panel -->
 </div><!-- col4 end feature -->
 <div class="col-sm-3 feature">
 <div class="panel panel-default">
 <div class="panel-heading">
-<h3 class="panel-title">Recently Viwed</h3>
+<h3 class="panel-title">Recently Viewed</h3>
 </div><!-- div end panel heading -->
-<img src="<c:url value ="/resources/images/6.jpg"/>" alt="Popular products" class="img-circle">
-
+<a href="<c:url value="/productForUser?searchCondition=cat"/>">
+<img id="g1" src="<c:url value ="/resources/images/6.jpg"/>" alt="Popular products" class="img-circle">
 <br>
-<a href="<c:url value="/productForUser?searchCondition=cat"/>">Recently viewed</a>
+Recently viewed</a>
 </div><!-- end panel -->
 </div><!-- col4 end feature -->
 <div class="col-sm-3 feature">
@@ -78,77 +80,13 @@ img:hover
 <h3 class="panel-title">Specially For You</h3>
 </div><!-- div end panel heading -->
 <div class="kit">
-<img style="height: 70px;width: 120px; " src="<c:url value ="/resources/images/ques.jpg"/>" alt="Popular products" class="img-circle">
+<img id="g1" style="height: 70px;width: 120px; " src="<c:url value ="/resources/images/ques.jpg"/>" alt="Popular products" class="img-circle">
 </div>
-
 <a href="<c:url value="/productForUser?searchCondition=cat"/>">Click me for more</a>
 </div><!-- end panel -->
 </div><!-- col4 end feature -->
-
-
 </div><!-- end features -->
-
-
 </div><!-- end container -->
 
-
-
-<%-- 
-<div class="row">
-<div class="col-md-4 " >
-
-		<a class="btn btn-default col-sm-offset-8" style="background-color:	#A9A9A9"  href="<c:url value="/productForUser?searchCondition=String" />" role="button"  >
-
-<img class="center-block" src="<c:url value ="/resources/images/4.jpg"/>">
-</a>
-<div class=text-right   " style="margin-right:25px;">
-<a style="text-decoration:none" href="<c:url value="/productForUser?searchCondition=cat" />">New Products</a>
-</div>
-</div>
-
-<div class="col-md-4"  >
-		<a class="btn btn-default col-sm-offset-4"  style="background-color:	#A9A9A9"  href="<c:url value="/productForUser?searchCondition=drums" />" role="button">
-<img id="onee" class="center-block" src="<c:url value = "/resources/images/5.jpg" /> "  >
-</a>
-<div class=text-center " style="margin-right:25px;">
-<a style="text-decoration:none" href="<c:url value="/productForUser?searchCondition=cat" />">Drums</a>
-</div>
-</div>
-
-
-<div class="col-md-4" >
-		<a class="btn btn-default col-sm-offset-1"  style="background-color:	#A9A9A9" href="<c:url value="/productForUser?searchCondition=Accessories" />" role="button"  >
-
-<img class="center-block" src="<c:url value = "/resources/images/6.jpg" /> " >
-</a>
-<div class=text-left " style="margin-left:25px;">
-<a style="text-decoration:none" href="<c:url value="/productForUser?searchCondition=cat" />">Product Accessories</a>
-</div>
-</div>
-</div> --%>
-<%-- 
-	<div class="container">
-		<h2 class="h2">Popular Products</h2>
-		<div class="row">
-			<div class="col-sm-4">
-				<a href="#" class="prod">Most Popular <img
-					class="img-responsive"
-					src="<c:url value ="/resources/images/4.jpg"/>"></a>
-			</div>
-		
-			<!-- row end -->
-			<div class="col-sm-4">
-				<a href='#'>Recently Viewed <img class="img-responsive"
-					src="<c:url value ="/resources/images/5.jpg"/>"></a>
-			</div>
-			<!-- row two end -->
-			<div class="col-sm-4">
-				<a href='#'>Used Products <img class="img-responsive"
-					src="<c:url value ="/resources/images/6.jpg"/>"></a>
-			</div>
-			<!-- row 3 end -->
-		</div>
-		</div>
-		 --%><!-- end container -->
 </body>
 </html>

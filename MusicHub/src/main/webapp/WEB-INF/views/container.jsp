@@ -81,7 +81,7 @@ position: relative; width: 100%; overflow: hidden;
 						src="<c:url value = "/resources/images/2.jpg" /> "
 						alt="Second slide">
 					<div class="carousel-caption">
-						 <h3>Don't lose Yourself in anger. Lose in Music. </h3>
+						 <h3>"Don't lose Yourself in anger. Lose in Music." </h3>
 					</div>
 				</div>
 				<div class="item">

@@ -11,25 +11,29 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>MusicHub</title>
 <style>
-
-{
-
+body{
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
 }
 </style>
 </head>
 <!-- <body style="background-color: #EEEEEE"> -->
 	<%@include file="header.jsp"%><br><br><br><br>
-	<body background=resources/images/back4.jpg>
-	<div class="container">
+<body background=resources/images/back_signup.jpg>
+ 	<div class="container">
 	<h1><center>Login</center></h1>
 <h3><center><p>Get access to your Orders,Wishlist and Recommendations</p></center></h3>
 
 <br>
 
 				<div class="container-wrapper">
-					
-					<div class="col-md-8">
-						<div id="login-box" align="center">
+					<div class="col-sm-3">
+					</div>
+					<div class="col-sm-6" align="center">
+						<div id="login-box">
 							<h2 align="center">Login with Username and Password</h2>
 							<c:if test="${not empty msg}">
 								<div class="msg">${msg}</div>

@@ -22,8 +22,8 @@
 <p><center>Here you can see the list of the Products, edit them, remove or update.</center></p>
 <center>
 
-<table border="1px" cellpadding="0" cellspacing="0" >
-<thead>
+<table border="1px" cellpadding="0" cellspacing="0" class="table table-hover">
+<thead class="bg-success">
 <tr>
 <th width="10%">Id</th><th width="10%">Image</th><th width="15%">Name</th><th width="10%">Brand</th>
 <th width="10%">Price</th><th width="10%">Category Id</th><th width="10%">Supplier Id</th><th width="10%">Actions</th>

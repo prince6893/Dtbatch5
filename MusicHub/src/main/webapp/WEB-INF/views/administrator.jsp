@@ -7,35 +7,38 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 <title>Admin page</title>
 <style>
-.ad
-{
-}
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 </style>
 </head>
 <body>
 <%@include file="header.jsp" %>
 
 <br />
-<h1 align="center">Welcome back, Admin!</h1>
-<br>
-<br><br><br><br>
-<br>
-
 <div class="container">
+<br></br>
+
+<h1 >Welcome back, Admin!</h1>
+<h2>You are authorised to perform the following tasks </h2>
+<br>
+<br><br>
+
 
 <div align="center" id="ad">
 
-<a href="${pageContext.request.contextPath}/product/add">AddProduct</a>
+<a href="${pageContext.request.contextPath}/product/add" class="btn btn-info">Add Product</a>
 <br><br>
-<a href="${pageContext.request.contextPath}/product/list">Product list</a>
+<a href="${pageContext.request.contextPath}/product/list" class="btn btn-danger">Product list</a>
 <br><br>
-<a href="${pageContext.request.contextPath}/category/add">AddCategory</a>
+<a href="${pageContext.request.contextPath}/category/add" class="btn btn-warning">AddCategory</a>
 <br><br>
-<a href="${pageContext.request.contextPath}/category/list">Category list</a>
+<a href="${pageContext.request.contextPath}/category/list" class="btn btn-info">Category list</a>
 <br><br>
-<a href="${pageContext.request.contextPath}/supplier/add">Add Supplier</a>
+<a href="${pageContext.request.contextPath}/supplier/add" class="btn btn-primary">Add Supplier</a>
 <br><br>
-<a href="${pageContext.request.contextPath}/supplier/list">Supplier list</a>
+<a href="${pageContext.request.contextPath}/supplier/list" class="btn btn-default">Supplier list</a>
 </div>
 </div>
 
