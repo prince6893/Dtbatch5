@@ -7,6 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>MusicHub</title>
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
 .fa {
 	font-size: 30px;
@@ -23,18 +26,48 @@
 {
 margin-bottom: 10px;
 }
+#foot
+{
+font-size: 16px;
+padding: 10px;
+}
+.love {
+  display: inline-block;
+  position: relative;
+  top: .2em;
+  font-size: 1.4em;
+  color: #e74c3c;
+  -webkit-transform: scale(.9);
+  -moz-transform: scale(.9);
+  transform: scale(.9);
+  -webkit-animation: love .5s infinite linear alternate-reverse;
+  -moz-animation: love .5s infinite linear alternate-reverse;
+  animation: love .5s infinite linear alternate-reverse;
+}
+@-webkit-keyframes love {
+  to {-webkit-transform: scale(1.2);}
+}
+@-moz-keyframes love {
+  to {-moz-transform: scale(1.2);}
+}
+@keyframes love {
+  to {transform: scale(1.2);}
+}
 </style>
 
 </head>
 <body>
 	<nav class="navbar navbar-inverse navbar-static-bottom">
-	<div class="container">
+	<div class="container" id="foot">
 		<div class="row">
-			<div class="navbar-text-pull-left" class="col-m-12">
+			<div class="navbar-text-pull-left" class="col-m-6">
 				<p id="fot" align="left">
 					Copyright &copy; MusicHub <a style="padding-left: 5px;"
 						href="<c:url value="/privacy" />">Privacy</a> 
-						<a href="#myModal" data-toggle="modal" data-target="#myModal">ContactUs</a> 
+						<a href="#myModal" data-toggle="modal" data-target="#myModal">Contact Us</a>
+						&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Made with <span class="love">(^)</span> by Prince Kumar
+		</p>
+		</div>
 						<div class="nav navbar-nav pull-right" class="col-m-6">
 							<a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
 							<a href="https://twitter.com/login" target="_blank"><i class="fa fa-twitter"></i></a>
@@ -42,7 +75,6 @@ margin-bottom: 10px;
 							<a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a> 
 							<a href="https://github.com/prince6893/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
 						</div>
-				</p>
 			</div>
 
 		</div>

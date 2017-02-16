@@ -12,25 +12,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 <title>Add product page</title>
 <style>
-td
-{
-padding-bottom: 10px;
-padding-top: 10px;
+body{
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
 }
-
 
 </style>
 </head>
-<body>
-
+<body background=resources/images/back_signup.jpg>
 <%@include file="header.jsp" %>
+
 <br>
-<center>
+<br>
+</br>
+<div class="container">
 <h1>Add product page</h1>
 <p>Here you can add a new product.</p>
+<div class="row">
+<center>
+<div class="col-sm-4">
 <form:form method="POST" commandName="product" action="${pageContext.request.contextPath}/product/add/process" enctype="multipart/form-data">
 
-<table>
+<table class="table table-hover">
 <tbody>
 
 
@@ -78,13 +84,16 @@ padding-top: 10px;
 	</tr>
 </tbody>
 </table>
+
 </form:form>
-</center>
+
+</div>
+</div>
+</div>
 <br><br>
 <br><br>
 <br><br>
-<br><br>
-<br><br>
+
 <%@include file="footer.jsp" %>
 
 </body>

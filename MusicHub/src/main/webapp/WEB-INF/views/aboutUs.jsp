@@ -7,9 +7,18 @@
 <title>MusicHub</title>
 
 </head>
-<body style="background-color: #EEEEEE">
+<style>
+body{
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
 
+</style>
 	<%@include file="header.jsp"%>
+<body background=resources/images/back_signup.jpg>
 	<p>
 		<br> <br> <br> <br> <br>
 	<center>
@@ -18,9 +27,9 @@
 		</h1>
 	</center>
 	<br>
-
-		<p style="margin-right:30px;margin-left:30px;">In 1981, seven musicians started MusicHub Limited with just
-			US$250. From the beginning, the company was founded on the principle
+<div class="container">
+		<p class="lead">In 2016, 4 musicians started MusicHub Limited with just
+			Rs 5000. From the beginning, the company was founded on the principle
 			of building and implementing great ideas that drive progress for
 			clients and enhance lives through enterprise solutions. For over
 			three decades, we have been a company focused on bringing to life
@@ -30,14 +39,14 @@
 			come as no surprise, then, that 98.8 percent (Q1 FY 17) of our
 			revenues come from existing clients. MusicHub has a growing global
 			presence with more than 197,000+ employees. Globally, we have 85
-			sales and marketing offices and 114 development centers as at March
+			sales and marketing offices and 114 development centers as at October
 			31, 2016. At MusicHub, we believe our responsibilities extend beyond
-			business. That is why we established the Music Match Foundation to
+			business. That is why we established the Music Hub Foundation to
 			provide assistance to some of the more socially and economically
 			depressed sectors of the communities in which we work. And that is
 			why we behave ethically and honestly in all our interactions with our
 			clients, our partners and our employees.</p>
-
+</div>
 	<br>
 	<br>
 

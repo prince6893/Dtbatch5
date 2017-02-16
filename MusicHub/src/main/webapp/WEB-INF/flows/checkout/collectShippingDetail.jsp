@@ -1,7 +1,8 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ include file="/WEB-INF/views/header.jsp" %>
 
-
+<br>
+<br>
 <div class="container-wrapper">
     <div class="container">
         <div class="page-header">
@@ -57,4 +58,8 @@
 
         </form:form>
 
+</div>
+</div>
+<br>
+<br>
 <%@ include file="/WEB-INF/views/footer.jsp" %>

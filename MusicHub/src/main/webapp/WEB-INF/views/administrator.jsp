@@ -11,9 +11,19 @@
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+body{
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
 </style>
 </head>
-<body>
+
+<body background=resources/images/back_signup.jpg>
+
 <%@include file="header.jsp" %>
 
 <br />
@@ -43,8 +53,6 @@
 </div>
 
 <br><br><br>
-<br><br>
-<br><br><br><br>
 
 <%@include file="footer.jsp" %>
 

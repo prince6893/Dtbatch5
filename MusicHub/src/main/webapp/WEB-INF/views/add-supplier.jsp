@@ -11,7 +11,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 <title>Add product page</title>
 </head>
-<body>
+<body background=resources/images/back_signup.jpg>
+
 <%@include file="header.jsp" %>
 
 
@@ -20,7 +21,7 @@
 </br>
 <br>
 </br>
-
+<br></br>
 <h1>Add supplier page</h1>
 <p>Here you can add a new Suppliers.</p>
 <form:form method="POST" commandName="supplier" action="${pageContext.request.contextPath}/supplier/add/process" modelAttribute="supplier">

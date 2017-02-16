@@ -12,12 +12,13 @@
 <title>Add Category page</title>
 </head>
 <body>
+<%@ include file="header.jsp" %>
 <center>
 <br>
 </br>
 <br>
 </br>
-
+<div class="container">
 <h1>Add Category page</h1>
 <p>Here you can add a new Categories.</p>
 <form:form method="POST" commandName="category" action="${pageContext.request.contextPath}/category/add/process" modelAttribute="category">
@@ -46,7 +47,20 @@
 </table>
 
 </form:form>
+
+</div>
 </center>
-<p><a href="${pageContext.request.contextPath}/index.html">Home page</a></p>
+<br>
+<br>
+<br>
+</br>
+<br>
+</br>
+</br>
+
+</br>
+</br>
+<%@include file="footer.jsp" %>
+
 </body>
 </html>

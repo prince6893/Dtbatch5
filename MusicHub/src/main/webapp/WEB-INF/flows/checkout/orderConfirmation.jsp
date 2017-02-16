@@ -1,6 +1,8 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ include file="/WEB-INF/views/header.jsp" %>
+<br>
+<br>
 
 <jsp:useBean id="now" class="java.util.Date" />
 
@@ -101,5 +103,8 @@
                 </form:form>
             </div>
         </div>
+</div>
+</div>
+<br>
 
 <%@ include file="/WEB-INF/views/footer.jsp" %>
